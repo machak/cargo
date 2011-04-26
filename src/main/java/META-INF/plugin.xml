@@ -1,0 +1,102 @@
+<?xml version="1.0"?>
+<!DOCTYPE idea-plugin PUBLIC "Plugin/DTD" "http://plugins.intellij.net/plugin.dtd">
+<idea-plugin url="http://cargo.codehaus.org/IntelliJ+IDEA+Plugin">
+  <name>Cargo</name>
+  <description>Cargo is a thin wrapper around existing containers (e.g. Orion, Jetty, OC4J, Tomcat, jo!).
+    It allows you to start/stop containers and deploy deployables like EARs and WARs.
+  </description>
+  <version>0.2-SNAPSHOT</version>
+  <vendor url="http://cargo.codehaus.org/" logo="/org/codehaus/cargo/intellijidea/icon.png">Codehaus</vendor>
+  <change-notes>Support for IDEA 5.x and Cargo 0.6</change-notes>
+  <idea-version since-build="3542"/>
+
+  <application-components>
+    <!-- jetty4x -->
+    <component>
+      <implementation-class>org.codehaus.cargo.intellijidea.jetty.Jetty4xIntegration</implementation-class>
+    </component>
+    <component>
+      <implementation-class>org.codehaus.cargo.intellijidea.jetty.Jetty4xConfigurationType</implementation-class>
+    </component>
+
+    <!-- jo1x -->
+    <component>
+      <implementation-class>org.codehaus.cargo.intellijidea.jo.Jo1xIntegration</implementation-class>
+    </component>
+    <component>
+      <implementation-class>org.codehaus.cargo.intellijidea.jo.Jo1xConfigurationType</implementation-class>
+    </component>
+
+    <!-- orion1x -->
+    <component>
+      <implementation-class>org.codehaus.cargo.intellijidea.orion.Orion1xIntegration</implementation-class>
+    </component>
+    <component>
+      <implementation-class>org.codehaus.cargo.intellijidea.orion.Orion1xConfigurationType</implementation-class>
+    </component>
+
+    <!-- orion2x -->
+    <component>
+      <implementation-class>org.codehaus.cargo.intellijidea.orion.Orion2xIntegration</implementation-class>
+    </component>
+    <component>
+      <implementation-class>org.codehaus.cargo.intellijidea.orion.Orion2xConfigurationType</implementation-class>
+    </component>
+
+    <!-- oc4j9x -->
+    <component>
+      <implementation-class>org.codehaus.cargo.intellijidea.orion.Oc4j9xIntegration</implementation-class>
+    </component>
+    <component>
+      <implementation-class>org.codehaus.cargo.intellijidea.orion.Oc4j9xConfigurationType</implementation-class>
+    </component>
+
+    <!-- resin2x -->
+    <component>
+      <implementation-class>org.codehaus.cargo.intellijidea.resin.Resin2xIntegration</implementation-class>
+    </component>
+    <component>
+      <implementation-class>org.codehaus.cargo.intellijidea.resin.Resin2xConfigurationType</implementation-class>
+    </component>
+
+    <!-- resin3x -->
+    <component>
+      <implementation-class>org.codehaus.cargo.intellijidea.resin.Resin3xIntegration</implementation-class>
+    </component>
+    <component>
+      <implementation-class>org.codehaus.cargo.intellijidea.resin.Resin3xConfigurationType</implementation-class>
+    </component>
+
+    <!-- tomcat3x -->
+    <component>
+      <implementation-class>org.codehaus.cargo.intellijidea.tomcat.Tomcat3xIntegration</implementation-class>
+    </component>
+    <component>
+      <implementation-class>org.codehaus.cargo.intellijidea.tomcat.Tomcat3xConfigurationType</implementation-class>
+    </component>
+
+    <!-- tomcat4x -->
+    <component>
+      <implementation-class>org.codehaus.cargo.intellijidea.tomcat.Tomcat4xIntegration</implementation-class>
+    </component>
+    <component>
+      <implementation-class>org.codehaus.cargo.intellijidea.tomcat.Tomcat4xConfigurationType</implementation-class>
+    </component>
+
+    <!-- tomcat5x -->
+    <component>
+      <implementation-class>org.codehaus.cargo.intellijidea.tomcat.Tomcat5xIntegration</implementation-class>
+    </component>
+    <component>
+      <implementation-class>org.codehaus.cargo.intellijidea.tomcat.Tomcat5xConfigurationType</implementation-class>
+    </component>
+
+    <!-- weblogic8x -->
+    <component>
+      <implementation-class>org.codehaus.cargo.intellijidea.weblogic.WebLogic8xIntegration</implementation-class>
+    </component>
+    <component>
+      <implementation-class>org.codehaus.cargo.intellijidea.weblogic.WebLogic8xConfigurationType</implementation-class>
+    </component>
+  </application-components>
+</idea-plugin>
